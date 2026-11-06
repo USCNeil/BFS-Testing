@@ -1,5 +1,264 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Burkett Financial Services internal testing environment for financial planning tools."><title>Burkett Financial Services, LLC | Planning Tools</title>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Burkett Financial Services testing environment for financial planning tools.">
+<title>Burkett Financial Services, LLC | Planning Tools</title>
+
 <style>
-:root{font-family:Arial,Helvetica,sans-serif;color:#173248;background:#eef3f5}*{box-sizing:border-box}body{margin:0}header{background:#102f48;color:#fff;padding:20px max(22px,calc((100vw - 1100px)/2));display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{font-weight:700;letter-spacing:.09em;font-size:15px}.headnote{font-size:12px;color:#bcd1dc;letter-spacing:.08em}.hero{position:relative;min-height:460px;background:linear-gradient(90deg,rgba(8,32,49,.77),rgba(8,32,49,.25)),url('mountain-trail.jpg') center 54%/cover;display:flex;align-items:center}.hero-inner{max-width:1100px;margin:auto;padding:70px 26px;color:#fff;width:100%}.kicker{text-transform:uppercase;letter-spacing:.22em;font-size:12px;font-weight:bold;color:#e3ecf2}h1{font-family:Georgia,serif;font-size:clamp(36px,5.5vw,65px);line-height:1.08;max-width:770px;margin:17px 0 22px} .tagline{font-size:clamp(17px,2.1vw,22px);line-height:1.5;max-width:750px;font-style:italic;color:#f2f7fa;margin:0}.content{max-width:1100px;margin:0 auto;padding:46px 24px 65px}h2{font-size:25px;margin:0 0 10px}.intro{color:#5b7181;line-height:1.6;margin:0 0 25px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:#fff;border:1px solid #d8e3e9;border-radius:12px;padding:27px;box-shadow:0 4px 16px #123a520b;display:flex;flex-direction:column;min-height:245px}.card .eyebrow{font-size:11px;font-weight:bold;letter-spacing:.13em;text-transform:uppercase;color:#24766f}.card h3{font-size:22px;margin:16px 0 10px}.card p{color:#5b7181;line-height:1.55;font-size:14px;flex:1;margin:0 0 24px}.action{display:inline-block;background:#155b79;color:#fff;text-decoration:none;font-weight:700;border-radius:7px;padding:12px 16px;text-align:center}.inactive{background:#edf2f5;color:#687d89;cursor:default}footer{background:#102f48;color:#cbdce5;text-align:center;padding:24px;font-size:12px;line-height:1.7}footer strong{color:#fff}@media(max-width:760px){header{padding:17px 22px;display:block}.headnote{margin-top:7px}.hero{min-height:400px}.cards{grid-template-columns:1fr}.card{min-height:0}}
-</style></head><body><header><div class="brand">BURKETT FINANCIAL SERVICES, LLC</div><div class="headnote">PLANNING TOOLS · TESTING ENVIRONMENT</div></header><section class="hero"><div class="hero-inner"><div class="kicker">Burkett Financial Services, LLC</div><h1>Planning tools for clearer financial decisions.</h1><p class="tagline">Coordinated wealth management and tax planning from a team of CPA and CFP® professionals</p></div></section><main class="content"><h2>BFS Testing Environment</h2><p class="intro">Explore planning applications and resources developed for the Burkett Financial Services team. Use hypothetical information only in this public testing environment.</p><div class="cards"><article class="card"><div class="eyebrow">Available now</div><h3>Retirement Stress Test</h3><p>Explore retirement sustainability, withdrawal assumptions, Monte Carlo results, and projected ending portfolio balances.</p><a class="action" href="retirement/">Open retirement calculator</a></article><article class="card"><div class="eyebrow">Future application</div><h3>Planning Calculators</h3><p>A home for additional financial and tax planning calculators as they are developed.</p><span class="action inactive" aria-disabled="true">Coming soon</span></article><article class="card"><div class="eyebrow">Future application</div><h3>Research &amp; Resources</h3><p>Additional research tools and resources for the BFS team.</p><span class="action inactive" aria-disabled="true">Coming soon</span></article></div></main><footer><strong>Burkett Financial Services, LLC</strong><div>Testing and demonstration only · Do not enter confidential client information</div></footer></body></html>
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #173248;
+  background: #eef3f5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+header {
+  background: #102f48;
+  color: #fff;
+  padding: 20px max(22px,calc((100vw - 1100px)/2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: .09em;
+  font-size: 15px;
+}
+
+.headnote {
+  font-size: 12px;
+  color: #bcd1dc;
+  letter-spacing: .08em;
+}
+
+.hero {
+  position: relative;
+  min-height: 460px;
+  background:
+    linear-gradient(90deg,rgba(8,32,49,.77),rgba(8,32,49,.25)),
+    url('mountain-trail.jpg') center 54%/cover;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 70px 26px;
+  color: #fff;
+  width: 100%;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: .22em;
+  font-size: 12px;
+  font-weight: bold;
+  color: #e3ecf2;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(36px,5.5vw,65px);
+  line-height: 1.08;
+  max-width: 770px;
+  margin: 17px 0 22px;
+}
+
+.tagline {
+  font-size: clamp(17px,2.1vw,22px);
+  line-height: 1.5;
+  max-width: 750px;
+  font-style: italic;
+  color: #f2f7fa;
+  margin: 0;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 46px 24px 65px;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+
+.intro {
+  color: #5b7181;
+  line-height: 1.6;
+  margin: 0 0 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d8e3e9;
+  border-radius: 12px;
+  padding: 27px;
+  box-shadow: 0 4px 16px #123a520b;
+  display: flex;
+  flex-direction: column;
+  min-height: 245px;
+}
+
+.card .eyebrow {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  color: #24766f;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin: 16px 0 10px;
+}
+
+.card p {
+  color: #5b7181;
+  line-height: 1.55;
+  font-size: 14px;
+  flex: 1;
+  margin: 0 0 24px;
+}
+
+.action {
+  display: inline-block;
+  background: #155b79;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 7px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+.action:hover {
+  background: #103f56;
+}
+
+.inactive {
+  background: #edf2f5;
+  color: #687d89;
+  cursor: default;
+}
+
+footer {
+  background: #102f48;
+  color: #cbdce5;
+  text-align: center;
+  padding: 24px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+footer strong { color: #fff; }
+
+@media(max-width:760px) {
+  header {
+    padding: 17px 22px;
+    display: block;
+  }
+  .headnote { margin-top: 7px; }
+  .hero { min-height: 400px; }
+  .cards { grid-template-columns: 1fr; }
+  .card { min-height: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">BURKETT FINANCIAL SERVICES, LLC</div>
+  <div class="headnote">PLANNING TOOLS · TESTING ENVIRONMENT</div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="kicker">Burkett Financial Services, LLC</div>
+    <h1>Planning tools for clearer financial decisions.</h1>
+    <p class="tagline">
+      Coordinated wealth management and tax planning from a team of CPA and CFP® professionals
+    </p>
+  </div>
+</section>
+
+<main class="content">
+
+  <h2>BFS Testing Environment</h2>
+
+  <p class="intro">
+    Explore planning applications and resources developed for the
+    Burkett Financial Services team. Use hypothetical information only
+    in this public testing environment.
+  </p>
+
+  <div class="cards">
+
+    <!-- Retirement Calculator -->
+    <article class="card">
+      <div class="eyebrow">Available now</div>
+      <h3>Retirement Stress Test</h3>
+      <p>
+        Explore retirement sustainability, withdrawal assumptions,
+        Monte Carlo results, and projected ending portfolio balances.
+      </p>
+      <a class="action" href="retirement/">
+        Open retirement calculator
+      </a>
+    </article>
+
+    <!-- Accumulation Calculator -->
+    <article class="card">
+      <div class="eyebrow">Available now</div>
+      <h3>Accumulation Calculator</h3>
+      <p>
+        Project investment growth using current savings, monthly
+        contributions, employer matching contributions, and expected
+        investment returns.
+      </p>
+      <a class="action" href="accumulation/">
+        Open accumulation calculator
+      </a>
+    </article>
+
+    <!-- Future Applications -->
+    <article class="card">
+      <div class="eyebrow">Future application</div>
+      <h3>Research &amp; Resources</h3>
+      <p>
+        Additional research tools, financial planning calculators,
+        and resources for the BFS team.
+      </p>
+      <span class="action inactive" aria-disabled="true">
+        Coming soon
+      </span>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <strong>Burkett Financial Services, LLC</strong>
+  <div>
+    Testing and demonstration only · Do not enter confidential client information
+  </div>
+</footer>
+
+</body>
+</html>
